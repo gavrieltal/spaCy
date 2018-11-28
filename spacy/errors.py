@@ -253,6 +253,9 @@ class Errors(object):
     E098 = ("Trying to set conflicting doc.ents: '{span1}' and '{span2}'. A token"
             " can only be part of one entity, so make sure the entities you're "
             "setting don't overlap.")
+    E099 = ("As of spaCy v2.1, the pipe name `sbd` has been deprecated in "
+            "favor of the pipe name `sentencizer`, which does the same thing. "
+            "For example, use `nlp.create_pipeline('sentencizer')`")
 
 @add_codes
 class TempErrors(object):
